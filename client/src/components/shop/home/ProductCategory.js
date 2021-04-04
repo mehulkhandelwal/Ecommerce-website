@@ -7,7 +7,7 @@ const ProductCategory = (props) => {
 
   return (
     <Fragment>
-      <div className="flex justify-between font-medium">
+      <div className="flex justify-between font-medium ">
         <div
           onClick={(e) =>
             dispatch({
@@ -19,7 +19,7 @@ const ProductCategory = (props) => {
             data.categoryListDropdown ? "text-yellow-700" : ""
           }`}
         >
-          <span className="text-md md:text-lg hover:text-yellow-700">
+          <span  className="text-md md:text-lg hover:text-yellow-700">
             Categories
           </span>
           <svg
@@ -99,7 +99,8 @@ const ProductCategory = (props) => {
           </div>
         </div>
       </div>
-      <ProductCategoryDropdown />
+      <ProductCategoryDropdown /><br></br><br></br>
+      <hr style={{height: "30px", width:"100%" ,borderStyle: "solid", borderColor:"black", borderWidth: "1px 0 0 0", borderRadius: "20px"}}></hr>
     </Fragment>
   );
 };

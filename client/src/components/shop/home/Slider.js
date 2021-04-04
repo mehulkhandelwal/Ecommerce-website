@@ -16,9 +16,10 @@ const Slider = (props) => {
 
   return (
     <Fragment>
-      <div className="relative mt-16 bg-gray-100 border-2">
+      <div className="relative mt-16 border-2">
         {data.sliderImages.length > 0 ? (
           <img
+            style={{height:"600px"}}
             className="w-full"
             src={`${apiURL}/uploads/customize/${data.sliderImages[slide].slideImage}`}
             alt="sliderImage"
@@ -56,15 +57,6 @@ const Slider = (props) => {
             d="M9 5l7 7-7 7"
           />
         </svg>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <a
-            href="#shop"
-            style={{ background: "#303031" }}
-            className="cursor-pointer box-border text-2xl text-white px-4 py-2 rounded"
-          >
-            Shop Now
-          </a>
-        </div>
       </div>
       <OrderSuccessMessage />
     </Fragment>

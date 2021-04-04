@@ -38,6 +38,7 @@ const SingleProduct = (props) => {
   if (data.loading) {
     return (
       <div className="col-span-2 md:col-span-3 lg:col-span-4 flex items-center justify-center py-24">
+        
         <svg
           className="w-12 h-12 animate-spin text-gray-600"
           fill="none"
@@ -56,15 +57,18 @@ const SingleProduct = (props) => {
     );
   }
   return (
+    
     <Fragment>
+      
       {products && products.length > 0 ? (
         products.map((item, index) => {
           return (
             <Fragment key={index}>
               <div className="relative col-span-1 m-2">
                 <img
+                  style={{height:"400px"}}
                   onClick={(e) => history.push(`/products/${item._id}`)}
-                  className="w-full object-cover object-center cursor-pointer"
+                  className="w-full cursor-pointer"
                   src={`${apiURL}/uploads/products/${item.pImages[0]}`}
                   alt=""
                 />
@@ -94,7 +98,7 @@ const SingleProduct = (props) => {
                     </span>
                   </div>
                 </div>
-                <div>${item.pPrice}.00</div>
+                <div>Rs {item.pPrice}.00</div>
                 {/* WhisList Logic  */}
                 <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                   <svg
@@ -141,6 +145,7 @@ const SingleProduct = (props) => {
         </div>
       )}
     </Fragment>
+    
   );
 };
 

@@ -45,7 +45,7 @@ const Login = (props) => {
       <div className="text-center text-2xl mb-6">Login</div>
       {layoutData.loginSignupError ? (
         <div className="bg-red-200 py-2 px-4 rounded">
-          You need to login for checkout. Haven't accont? Create new one.
+          You need to login for checkout. Dont have an account? Create one.
         </div>
       ) : (
         ""

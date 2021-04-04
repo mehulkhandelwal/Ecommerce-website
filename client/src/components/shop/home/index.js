@@ -16,6 +16,8 @@ const HomeComponent = () => {
         <ProductCategory />
       </section>
       {/* Product Section */}
+      <h2 style={{marginLeft:"45%", fontWeight:"bold", fontSize:"35px"}} 
+      className="text-md md:text-lg hover:text-yellow-700 cursor-pointer">All Products</h2>
       <section className="m-4 md:mx-8 md:my-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <SingleProduct />
       </section>

@@ -8,9 +8,9 @@ const AdminSidebar = (props) => {
   return (
     <Fragment>
       <div
-        style={{ boxShadow: "1px 1px 8px 0.2px #aaaaaa" }}
+        style={{ boxShadow: "1px 1px 8px 0.2px #E6B8E9", background:"#E6B8E9" }}
         id="sidebar"
-        className="hidden md:block sticky top-0 left-0 h-screen md:w-3/12 lg:w-2/12 sidebarShadow bg-white text-gray-600"
+        className="hidden md:block sticky top-0 left-0 h-screen md:w-3/12 lg:w-2/12 sidebarShadow text-gray-600"
       >
         <div
           onClick={(e) => history.push("/admin/dashboard")}
@@ -38,7 +38,7 @@ const AdminSidebar = (props) => {
           </span>
           <span className="hover:text-gray-800">Dashboard</span>
         </div>
-        <hr className="border-b border-gray-200" />
+        <hr className="border-b border-black" />
         <div
           onClick={(e) => history.push("/admin/dashboard/categories")}
           className={`${
@@ -65,14 +65,14 @@ const AdminSidebar = (props) => {
           </span>
           <span className="hover:text-gray-800">Categories</span>
         </div>
-        <hr className="border-b border-gray-200" />
+        <hr className="border-b border-black" />
         <div
           onClick={(e) => history.push("/admin/dashboard/products")}
           className={`${
             location.pathname === "/admin/dashboard/products"
               ? "border-r-4 border-gray-800 bg-gray-100"
               : ""
-          } hover:bg-gray-200 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-blue-400 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
@@ -92,14 +92,14 @@ const AdminSidebar = (props) => {
           </span>
           <span className="hover:text-gray-800">Product</span>
         </div>
-        <hr className="border-b border-gray-200" />
+        <hr className="border-b border-black" />
         <div
           onClick={(e) => history.push("/admin/dashboard/orders")}
           className={`${
             location.pathname === "/admin/dashboard/orders"
               ? "border-r-4 border-gray-800 bg-gray-100"
               : ""
-          } hover:bg-gray-200 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-yellow-400 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
@@ -119,7 +119,7 @@ const AdminSidebar = (props) => {
           </span>
           <span className="hover:text-gray-800">Order</span>
         </div>
-        <hr className="border-b border-gray-200" />
+        <hr className="border-b border-black" />
       </div>
     </Fragment>
   );

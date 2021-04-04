@@ -30,26 +30,29 @@ const Navber = (props) => {
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-10 shadow-lg lg:shadow-none bg-white">
-        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3">
-          <div className="hidden lg:block col-span-1 flex text-gray-600 mt-1">
+      <nav className="fixed top-0 w-full z-10 shadow-lg lg:shadow-none bg-black" style={{height:"60px"}}>
+        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3"style={{marginTop:"10px"}}>
+          <div className="hidden lg:block col-span-1 flex text-yellow-600 mt-1">
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              className="cursor-pointer"
               onClick={(e) => history.push("/")}
             >
               Shop
             </span>
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              className="cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
             <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              className="cursor-pointer"
               onClick={(e) => history.push("/contact-us")}
             >
-              Contact us
+              Contact Us
             </span>
           </div>
           <div className="col-span-2 lg:hidden flex justify-items-stretch	 items-center">
@@ -68,20 +71,21 @@ const Navber = (props) => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
+
             <span
               onClick={(e) => history.push("/")}
-              style={{ letterSpacing: "0.10rem" }}
-              className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
+              style={{ letterSpacing: "0.10rem" , color: "magenta", fontSize: "30px"}}
+              className="flex items-left text-center font-bold uppercase text-yellow-800 text-2xl cursor-pointer px-2 text-center"
             >
-              Hayroo
+              SHOPInist
             </span>
           </div>
           <div
             onClick={(e) => history.push("/")}
-            style={{ letterSpacing: "0.70rem" }}
-            className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
+            style={{ letterSpacing: "0.50rem" , color: "magenta",fontSize: "30px"}}
+            className="hidden lg:block flex items-left col-span-1 text-center text-yellow-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
-            Hayroo
+            SHOPInist
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}

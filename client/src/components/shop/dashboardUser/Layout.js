@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <Fragment>
       <DashboardUserContext.Provider value={{ data, dispatch }}>
         <div className="flex-grow">
-          <Navber />
+          <Navber /><br></br>
           <CartModal />
           <div className="mx-4 mt-24 md:mx-12 md:mt-32 lg:mt-24 flex flex-col md:flex-row">
             <Sidebar />
