@@ -100,7 +100,7 @@ const ProductCategory = (props) => {
         </div>
       </div>
       <ProductCategoryDropdown /><br></br><br></br>
-      <hr style={{height: "30px", width:"100%" ,borderStyle: "solid", borderColor:"black", borderWidth: "1px 0 0 0", borderRadius: "20px"}}></hr>
+      <hr style={{marginLeft:"0",height: "30px",width:"100%" ,borderStyle: "solid", borderColor:"lightgray", borderWidth: "5px 0 0 0", borderRadius: "20px"}}></hr>
     </Fragment>
   );
 };

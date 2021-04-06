@@ -20,7 +20,7 @@ const DashboardComponent = () => {
 const DashboardAdmin = (props) => {
   const [data, dispatch] = useReducer(dashboardReducer, dashboardState);
   return (
-    <Fragment>
+    <Fragment style={{background: "#576675"}}>
       <DashboardContext.Provider value={{ data, dispatch }}>
         <AdminLayout children={<DashboardComponent />} />
       </DashboardContext.Provider>

@@ -13,6 +13,7 @@ const Submenu = ({ category }) => {
       <section className="mx-4 mt-24 md:mx-12 md:mt-32 lg:mt-24">
         <div className="flex justify-between items-center">
           <div className="text-sm flex space-x-3">
+            
             <span
               className="hover:text-yellow-700 cursor-pointer"
               onClick={(e) => history.push("/")}
@@ -89,7 +90,7 @@ const AllProduct = ({ products }) => {
                       </span>
                     </div>
                   </div>
-                  <div>{item.pPrice}.00$</div>
+                  <div>{item.pPrice}.00 Rs</div>
                   <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                     <svg
                       className="w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700"

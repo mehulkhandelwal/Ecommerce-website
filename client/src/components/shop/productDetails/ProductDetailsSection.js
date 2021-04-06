@@ -130,7 +130,7 @@ const ProductDetailsSection = (props) => {
           <div className="col-span-2 md:col-span-7">
             <div className="relative">
               <img
-                className="w-full"
+                style={{height:"550px",width:"400px", marginLeft:"200px"}}
                 src={`${apiURL}/uploads/products/${sProduct.pImages[count]}`}
                 alt="Pic"
               />
@@ -139,6 +139,7 @@ const ProductDetailsSection = (props) => {
                   onClick={(e) =>
                     slideImage("increase", null, count, setCount, pImages)
                   }
+                  
                   className="flex justify-center  w-12 h-12 text-gray-700 opacity-25 cursor-pointer hover:text-yellow-700 hover:opacity-100"
                   fill="none"
                   stroke="currentColor"

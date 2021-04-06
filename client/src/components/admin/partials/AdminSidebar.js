@@ -8,21 +8,22 @@ const AdminSidebar = (props) => {
   return (
     <Fragment>
       <div
-        style={{ boxShadow: "1px 1px 8px 0.2px #E6B8E9", background:"#E6B8E9" }}
+        style={{background:"#2F4F4F" }}
         id="sidebar"
-        className="hidden md:block sticky top-0 left-0 h-screen md:w-3/12 lg:w-2/12 sidebarShadow text-gray-600"
+        className="fixed hidden md:block sticky top-0 left-0 h-screen md:w-3/12 lg:w-2/12 shadow-md text-white"
       >
         <div
           onClick={(e) => history.push("/admin/dashboard")}
+          style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard"
-              ? "border-r-4 border-gray-800 bg-gray-100"
+              ? "border-r-4 border-gray-800 bg-gray-700"
               : ""
-          } hover:bg-gray-200 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-gray-700 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
-              className="w-8 h-8 text-gray-600 hover:text-gray-800"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -36,20 +37,21 @@ const AdminSidebar = (props) => {
               />
             </svg>
           </span>
-          <span className="hover:text-gray-800">Dashboard</span>
-        </div>
-        <hr className="border-b border-black" />
+          <span className="hover:text-white">Dashboard</span>
+        </div><br></br>
+
         <div
           onClick={(e) => history.push("/admin/dashboard/categories")}
+          style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/categories"
-              ? "border-r-4 border-gray-800 bg-gray-100"
+              ? "border-r-4 border-gray-800 bg-gray-700"
               : ""
-          } hover:bg-gray-200 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-gray-700 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
-              className="w-8 h-8 text-gray-600 hover:text-gray-800"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -63,20 +65,20 @@ const AdminSidebar = (props) => {
               />
             </svg>
           </span>
-          <span className="hover:text-gray-800">Categories</span>
-        </div>
-        <hr className="border-b border-black" />
+          <span className="hover:text-white">Categories</span>
+        </div><br></br>
         <div
           onClick={(e) => history.push("/admin/dashboard/products")}
+          style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/products"
-              ? "border-r-4 border-gray-800 bg-gray-100"
+              ? "border-r-4 border-gray-800 bg-gray-700"
               : ""
-          } hover:bg-blue-400 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-gray-700 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
-              className="w-8 h-8 text-gray-600 hover:text-gray-800"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -90,20 +92,20 @@ const AdminSidebar = (props) => {
               />
             </svg>
           </span>
-          <span className="hover:text-gray-800">Product</span>
-        </div>
-        <hr className="border-b border-black" />
+          <span className="hover:text-white">Product</span>
+        </div><br></br>
         <div
           onClick={(e) => history.push("/admin/dashboard/orders")}
+          style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/orders"
-              ? "border-r-4 border-gray-800 bg-gray-100"
+              ? "border-r-4 border-gray-800 bg-gray-700"
               : ""
-          } hover:bg-yellow-400 cursor-pointer flex flex-col items-center justify-center py-6`}
+          } hover:bg-gray-700 cursor-pointer flex flex-col items-center justify-center py-6`}
         >
           <span>
             <svg
-              className="w-8 h-8 text-gray-600 hover:text-gray-800"
+              className="w-8 h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -117,9 +119,8 @@ const AdminSidebar = (props) => {
               />
             </svg>
           </span>
-          <span className="hover:text-gray-800">Order</span>
+          <span className="hover:text-white">Order</span>
         </div>
-        <hr className="border-b border-black" />
       </div>
     </Fragment>
   );

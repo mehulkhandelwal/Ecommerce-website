@@ -30,25 +30,25 @@ const Navber = (props) => {
   return (
     <Fragment>
       {/* Navber Section */}
-      <nav className="fixed top-0 w-full z-10 shadow-lg lg:shadow-none bg-black" style={{height:"60px"}}>
-        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3"style={{marginTop:"10px"}}>
+      <nav className="fixed top-0 w-full z-10 shadow-lg lg:shadow-none bg-black" style={{height:"40px"}}>
+        <div className="m-4 md:mx-12 md:my-6 grid grid-cols-4 lg:grid-cols-3"style={{marginTop:"0px"}}>
           <div className="hidden lg:block col-span-1 flex text-yellow-600 mt-1">
             <span
-              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              style={{color: "slategray", padding: "1rem", fontSize:"17px"}}
               className="cursor-pointer"
               onClick={(e) => history.push("/")}
             >
               Shop
             </span>
             <span
-              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              style={{color: "slategray", padding: "1rem", fontSize:"17px"}}
               className="cursor-pointer"
               onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
             <span
-              style={{color: "slategray", padding: "1rem", fontSize:"20px"}}
+              style={{color: "slategray", padding: "1rem", fontSize:"17px"}}
               className="cursor-pointer"
               onClick={(e) => history.push("/contact-us")}
             >
@@ -74,7 +74,7 @@ const Navber = (props) => {
 
             <span
               onClick={(e) => history.push("/")}
-              style={{ letterSpacing: "0.10rem" , color: "magenta", fontSize: "30px"}}
+              style={{ letterSpacing: "0.10rem" , color: "magenta", fontSize: "24px"}}
               className="flex items-left text-center font-bold uppercase text-yellow-800 text-2xl cursor-pointer px-2 text-center"
             >
               SHOPInist
@@ -82,7 +82,7 @@ const Navber = (props) => {
           </div>
           <div
             onClick={(e) => history.push("/")}
-            style={{ letterSpacing: "0.50rem" , color: "magenta",fontSize: "30px"}}
+            style={{ letterSpacing: "0.50rem" , color: "magenta",fontSize: "24px"}}
             className="hidden lg:block flex items-left col-span-1 text-center text-yellow-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
             SHOPInist
@@ -99,7 +99,7 @@ const Navber = (props) => {
                   location.pathname === "/wish-list"
                     ? "fill-current text-gray-800"
                     : ""
-                } w-8 h-8 text-gray-600 cursor-pointer`}
+                } w-6 h-6 text-gray-600 cursor-pointer`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -120,7 +120,7 @@ const Navber = (props) => {
                   title="Logout"
                 >
                   <svg
-                    className="cursor-pointer w-8 h-8 text-gray-600 hover:text-gray-800"
+                    className="cursor-pointer w-6 h-6 text-gray-600 hover:text-gray-800"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -322,7 +322,7 @@ const Navber = (props) => {
                 title="Login"
               >
                 <svg
-                  className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                  className="w-6 h-6 text-gray-600 hover:text-gray-800"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -344,7 +344,7 @@ const Navber = (props) => {
               title="Cart"
             >
               <svg
-                className="w-8 h-8 text-gray-600 hover:text-gray-800"
+                className="w-6 h-6 text-gray-600 hover:text-gray-800"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -370,7 +370,7 @@ const Navber = (props) => {
               : "hidden px-1 pb-2 md:pb-0 md:px-10 lg:hidden"
           }
         >
-          <div className="col-span-1 flex flex-col text-gray-600">
+          <div className="col-span-1 flex flex-col text-gray-600 bg-black rounded-lg">
             <span
               className="font-medium text-lg tracking-widest hover:text-gray-800 hover:bg-gray-200 px-3 py-2 rounded-lg cursor-pointer"
               onClick={(e) => history.push("/")}
