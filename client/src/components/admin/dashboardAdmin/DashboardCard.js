@@ -31,7 +31,7 @@ const DashboardCard = (props) => {
             </svg>
           </div>
           <div className="text-2xl font-semibold">
-            {data ? data.totalData.Users : 0}
+            {/* {data ? data.totalData.Users : 0} */}0
           </div>
           <div className="text-lg font-medium">Customers</div>
           <div className="flex items-center space-x-1 text-green-700">
@@ -72,7 +72,7 @@ const DashboardCard = (props) => {
             </svg>
           </div>
           <div className="text-2xl font-semibold">
-            {data ? data.totalData.Orders : 0}
+            {/* {data ? data.totalData.Orders : 0} */}0
           </div>
           <div className="text-lg font-medium">Orders</div>
           <div className="flex items-center space-x-1 text-green-700">
@@ -111,7 +111,7 @@ const DashboardCard = (props) => {
             </svg>
           </div>
           <div className="text-2xl font-semibold">
-            {data ? data.totalData.Products : 0}
+            {/* {data ? data.totalData.Products : 0} */}0
           </div>
           <div className="text-lg font-medium">Product</div>
         </div>
@@ -133,7 +133,7 @@ const DashboardCard = (props) => {
             </svg>
           </div>
           <div className="text-2xl font-semibold">
-            {data ? data.totalData.Categories : 0}
+            {/* {data ? data.totalData.Categories : 0} */}0
           </div>
           <div className="text-lg font-medium">Categories</div>
         </div>

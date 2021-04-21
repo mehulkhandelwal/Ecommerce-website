@@ -41,7 +41,7 @@ const AdminSidebar = (props) => {
         </div><br></br>
 
         <div
-          onClick={(e) => history.push("/admin/dashboard/categories")}
+          // onClick={(e) => history.push("/admin/dashboard/categories")}
           style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/categories"
@@ -68,7 +68,7 @@ const AdminSidebar = (props) => {
           <span className="hover:text-white">Categories</span>
         </div><br></br>
         <div
-          onClick={(e) => history.push("/admin/dashboard/products")}
+          // onClick={(e) => history.push("/admin/dashboard/products")}
           style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/products"
@@ -95,7 +95,7 @@ const AdminSidebar = (props) => {
           <span className="hover:text-white">Product</span>
         </div><br></br>
         <div
-          onClick={(e) => history.push("/admin/dashboard/orders")}
+          // onClick={(e) => history.push("/admin/dashboard/orders")}
           style={{height:"80px"}}
           className={`${
             location.pathname === "/admin/dashboard/orders"

@@ -23,7 +23,7 @@ exports.isAuth = (req, res, next) => {
     !req.userDetails._id ||
     loggedInUserId != req.userDetails._id
   ) {
-    res.status(403).json({ error: "You are not authenticate" });
+    res.status(403).json({ error: "You are not authenticated" });
   }
   next();
 };
