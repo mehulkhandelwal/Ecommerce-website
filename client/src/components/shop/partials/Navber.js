@@ -40,20 +40,7 @@ const Navber = (props) => {
             >
               Shop
             </span>
-            <span
-              style={{color: "slategray", padding: "1rem", fontSize:"17px"}}
-              className="cursor-pointer"
-              onClick={(e) => history.push("/blog")}
-            >
-              Blog
-            </span>
-            <span
-              style={{color: "slategray", padding: "1rem", fontSize:"17px"}}
-              className="cursor-pointer"
-              onClick={(e) => history.push("/contact-us")}
-            >
-              Contact Us
-            </span>
+            
           </div>
           <div className="col-span-2 lg:hidden flex justify-items-stretch	 items-center">
             <svg

@@ -6,10 +6,8 @@
   "scripts": {
     "start:dev": "nodemon app.js"
   },
-  
   "author": "Mehul Khandelwal",
   "license": "ISC",
-  
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "braintree": "^3.0.0",
